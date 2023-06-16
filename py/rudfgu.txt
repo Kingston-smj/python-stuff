@@ -1,0 +1,534 @@
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: Kingston
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+Enter new UNIX username: Kingston
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+Enter new UNIX username: `--force-badname'
+/bin/bash: -c: line 0: unexpected EOF while looking for matching ``'
+/bin/bash: -c: line 1: syntax error: unexpected end of file
+Enter new UNIX username: kingston
+New password:
+Retype new password:
+Sorry, passwords do not match.
+passwd: Authentication token manipulation error
+passwd: password unchanged
+Try again? [y/N] y
+New password:
+Retype new password:
+passwd: password updated successfully
+Installation successful!
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Oct 17 16:26:12 WAT 2022
+
+  System load:  0.07               Processes:             8
+  Usage of /:   0.4% of 250.98GB   Users logged in:       0
+  Memory usage: 1%                 IPv4 address for eth0: 172.17.47.156
+  Swap usage:   0%
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once once a day. To disable it please create the
+/home/kingston/.hushlogin file.
+kingston@DESKTOP-FI4P6OG:~$ whoami
+kingston
+kingston@DESKTOP-FI4P6OG:~$ sudo apt update
+[sudo] password for kingston:
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1785 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [297 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [11.2 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1241 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [176 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [596 B]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [737 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [136 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [15.3 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [22.2 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5376 B]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [508 B]
+58% [9 Packages 7927 kB/8628 kB 92%]                                                                       199 kB/s 59s^Get:21 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2158 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [381 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [16.0 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1332 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [188 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [592 B]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [968 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [221 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [21.8 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.4 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7316 B]
+Get:37 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [588 B]
+Get:38 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.6 kB]
+Get:39 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:41 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:42 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [23.9 kB]
+Get:43 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.0 kB]
+Get:44 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [860 B]
+Get:45 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 26.2 MB in 2min 3s (213 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+291 packages can be upgraded. Run 'apt list --upgradable' to see them.
+kingston@DESKTOP-FI4P6OG:~$ python3
+Python 3.8.2 (default, Mar 13 2020, 10:14:16)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+kingston@DESKTOP-FI4P6OG:~$ sudo apt install ipython
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package ipython is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'ipython' has no installation candidate
+kingston@DESKTOP-FI4P6OG:~$ sudo apt search ipython
+Sorting... Done
+Full Text Search... Done
+astro-viewers/focal 2.1 all
+  Interactive astronomical data viewers
+
+fonts-powerline/focal 2.7-3 all
+  prompt and statusline utility (symbols font)
+
+ipython3/focal 7.13.0-1 all
+  Enhanced interactive Python 3 shell
+
+isympy3/focal 1.5.1-2.1 all
+  Python3 shell for SymPy
+
+jupyter-console/focal 6.0.0-2 all
+  Jupyter terminal client (script)
+
+jupyter-core/focal 4.6.3-3 all
+  Core common functionality of Jupyter projects (tools)
+
+jupyter-qtconsole/focal 4.6.0-1 all
+  Jupyter - Qt console (binaries)
+
+mu-editor/focal 1.0.2+dfsg-4build1 all
+  simple editor for beginner Python programmers
+
+mu-editor-doc/focal 1.0.2+dfsg-4build1 all
+  simple editor for beginner Python programmers (documentation)
+
+powerline/focal 2.7-3 amd64
+  prompt and statusline utility
+
+powerline-doc/focal 2.7-3 all
+  prompt and statusline utility (documentation)
+
+powerline-gitstatus/focal 1.3.1-1 all
+  Powerline Git segment
+
+pry/focal 0.12.2-2 all
+  powerful irb alternative and runtime developer console
+
+python-agate-doc/focal 1.6.0-3 all
+  documentation for agate
+
+python-ipython-doc/focal 7.13.0-1 all
+  Enhanced interactive Python shell (documentation)
+
+python-ipython-genutils/focal 0.2.0-1ubuntu1 all
+  IPython vestigial utilities for Python 2
+
+python-itango-doc/focal 0.1.7-2 all
+  Interactive Tango client - documentation
+
+python-jupyter-console-doc/focal 6.0.0-2 all
+  Jupyter terminal client (documentation)
+
+python-leather-doc/focal 0.3.3-1 all
+  documentation for leather
+
+python-qtconsole-doc/focal 4.6.0-1 all
+  Jupyter - Qt console (documentation)
+
+python-sardana-doc/focal 3.0.2a0+34.9f6895-1 all
+  instrument control and data acquisition system - documentation
+
+python-snimpy-doc/focal 0.8.13-2 all
+  interactive SNMP tool with Python (documentation)
+
+python-traitlets-doc/focal 4.3.3-3 all
+  Lightweight Traits-like package for Python
+
+python3-agate/focal 1.6.0-3 all
+  data analysis library optimized for human readability
+
+python3-ipdb/focal 0.12.2-2 all
+  IPython-based pdb replacement (Python 3 version)
+
+python3-ipykernel/focal 5.2.0-1 all
+  IPython kernel for Jupyter (Python 3)
+
+python3-ipython/focal 7.13.0-1 all
+  Enhanced interactive Python shell (Python 3 version)
+
+python3-ipython-genutils/focal 0.2.0-1ubuntu1 all
+  IPython vestigial utilities for Python 3
+
+python3-itango/focal 0.1.7-2 all
+  Interactive Tango client - Python 3
+
+python3-jupyter-console/focal 6.0.0-2 all
+  Jupyter terminal client (Python 3)
+
+python3-knitpy/focal 0.1.1~git20180430-1 all
+  report generation tool with Python
+
+python3-leather/focal 0.3.3-1 all
+  charting library for Python
+
+python3-line-profiler/focal 2.1-2build2 amd64
+  line-by-line profiling for Python
+
+python3-nb2plots/focal 0.6-2 all
+  Converting between ipython notebooks and sphinx docs (Python 3)
+
+python3-pikepdf/focal 1.10.3+dfsg-1 amd64
+  Python library to read and write PDFs with QPDF
+
+python3-powerline/focal 2.7-3 all
+  prompt and statusline utility (Python 3.x module)
+
+python3-powerline-gitstatus/focal 1.3.1-1 all
+  Powerline Git segment for Python (3.x)
+
+python3-qtconsole/focal 4.6.0-1 all
+  Jupyter - Qt console (Python 3)
+
+python3-sagenb-export/focal 3.2-4 all
+  Convert SageNB Notebooks (Python 3)
+
+python3-sardana/focal 3.0.2a0+34.9f6895-1 all
+  instrument control and data acquisition system - library
+
+python3-snimpy/focal 0.8.13-2 amd64
+  high-level SNMP bindings for Python 3
+
+python3-traitlets/focal 4.3.3-3 all
+  Lightweight Traits-like package for Python 3
+
+snimpy/focal 0.8.13-2 all
+  interactive SNMP tool with Python
+
+kingston@DESKTOP-FI4P6OG:~$ sudo apt install ipython3
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  python3-backcall python3-decorator python3-ipython python3-ipython-genutils python3-jedi python3-parso
+  python3-pexpect python3-pickleshare python3-prompt-toolkit python3-ptyprocess python3-pygments python3-traitlets
+  python3-wcwidth
+Suggested packages:
+  python-ipython-doc python-pexpect-doc python-pygments-doc ttf-bitstream-vera
+The following NEW packages will be installed:
+  ipython3 python3-backcall python3-decorator python3-ipython python3-ipython-genutils python3-jedi python3-parso
+  python3-pexpect python3-pickleshare python3-prompt-toolkit python3-ptyprocess python3-pygments python3-traitlets
+  python3-wcwidth
+0 upgraded, 14 newly installed, 0 to remove and 291 not upgraded.
+Need to get 2048 kB of archives.
+After this operation, 12.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-backcall all 0.1.0-2 [11.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-decorator all 4.4.2-0ubuntu1 [10.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-parso all 0.5.2-1ubuntu1 [62.8 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-jedi all 0.15.2-1 [502 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-ptyprocess all 0.6.0-1ubuntu1 [13.3 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pexpect all 4.6.0-1build1 [44.6 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-pickleshare all 0.7.5-2 [7560 B]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-wcwidth all 0.1.8+dfsg1-3 [17.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-prompt-toolkit all 2.0.10-2 [220 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pygments all 2.3.1+dfsg-1ubuntu2.2 [579 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-ipython-genutils all 0.2.0-1ubuntu1 [21.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-traitlets all 4.3.3-3 [59.9 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-ipython all 7.13.0-1 [494 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/universe amd64 ipython3 all 7.13.0-1 [4988 B]
+Fetched 2048 kB in 8s (273 kB/s)
+Selecting previously unselected package python3-backcall.
+(Reading database ... 31836 files and directories currently installed.)
+Preparing to unpack .../00-python3-backcall_0.1.0-2_all.deb ...
+Unpacking python3-backcall (0.1.0-2) ...
+Selecting previously unselected package python3-decorator.
+Preparing to unpack .../01-python3-decorator_4.4.2-0ubuntu1_all.deb ...
+Unpacking python3-decorator (4.4.2-0ubuntu1) ...
+Selecting previously unselected package python3-parso.
+Preparing to unpack .../02-python3-parso_0.5.2-1ubuntu1_all.deb ...
+Unpacking python3-parso (0.5.2-1ubuntu1) ...
+Selecting previously unselected package python3-jedi.
+Preparing to unpack .../03-python3-jedi_0.15.2-1_all.deb ...
+Unpacking python3-jedi (0.15.2-1) ...
+Selecting previously unselected package python3-ptyprocess.
+Preparing to unpack .../04-python3-ptyprocess_0.6.0-1ubuntu1_all.deb ...
+Unpacking python3-ptyprocess (0.6.0-1ubuntu1) ...
+Selecting previously unselected package python3-pexpect.
+Preparing to unpack .../05-python3-pexpect_4.6.0-1build1_all.deb ...
+Unpacking python3-pexpect (4.6.0-1build1) ...
+Selecting previously unselected package python3-pickleshare.
+Preparing to unpack .../06-python3-pickleshare_0.7.5-2_all.deb ...
+Unpacking python3-pickleshare (0.7.5-2) ...
+Selecting previously unselected package python3-wcwidth.
+Preparing to unpack .../07-python3-wcwidth_0.1.8+dfsg1-3_all.deb ...
+Unpacking python3-wcwidth (0.1.8+dfsg1-3) ...
+Selecting previously unselected package python3-prompt-toolkit.
+Preparing to unpack .../08-python3-prompt-toolkit_2.0.10-2_all.deb ...
+Unpacking python3-prompt-toolkit (2.0.10-2) ...
+Selecting previously unselected package python3-pygments.
+Preparing to unpack .../09-python3-pygments_2.3.1+dfsg-1ubuntu2.2_all.deb ...
+Unpacking python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+Selecting previously unselected package python3-ipython-genutils.
+Preparing to unpack .../10-python3-ipython-genutils_0.2.0-1ubuntu1_all.deb ...
+Unpacking python3-ipython-genutils (0.2.0-1ubuntu1) ...
+Selecting previously unselected package python3-traitlets.
+Preparing to unpack .../11-python3-traitlets_4.3.3-3_all.deb ...
+Unpacking python3-traitlets (4.3.3-3) ...
+Selecting previously unselected package python3-ipython.
+Preparing to unpack .../12-python3-ipython_7.13.0-1_all.deb ...
+Unpacking python3-ipython (7.13.0-1) ...
+Selecting previously unselected package ipython3.
+Preparing to unpack .../13-ipython3_7.13.0-1_all.deb ...
+Unpacking ipython3 (7.13.0-1) ...
+Setting up python3-backcall (0.1.0-2) ...
+Setting up python3-parso (0.5.2-1ubuntu1) ...
+Setting up python3-ipython-genutils (0.2.0-1ubuntu1) ...
+Setting up python3-decorator (4.4.2-0ubuntu1) ...
+Setting up python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+Setting up python3-wcwidth (0.1.8+dfsg1-3) ...
+Setting up python3-pickleshare (0.7.5-2) ...
+Setting up python3-traitlets (4.3.3-3) ...
+Setting up python3-ptyprocess (0.6.0-1ubuntu1) ...
+Setting up python3-prompt-toolkit (2.0.10-2) ...
+Setting up python3-jedi (0.15.2-1) ...
+Setting up python3-pexpect (4.6.0-1build1) ...
+Setting up python3-ipython (7.13.0-1) ...
+Setting up ipython3 (7.13.0-1) ...
+Processing triggers for man-db (2.9.1-1) ...
+kingston@DESKTOP-FI4P6OG:~$ ipython
+
+Command 'ipython' not found, did you mean:
+
+  command 'ipython3' from deb ipython3 (7.13.0-1)
+  command 'bpython' from deb bpython (0.18-3)
+
+Try: sudo apt install <deb name>
+
+kingston@DESKTOP-FI4P6OG:~$ ipython3
+Python 3.8.2 (default, Mar 13 2020, 10:14:16)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import time
+
+In [2]: exit
+kingston@DESKTOP-FI4P6OG:~$ ipython3
+Python 3.8.2 (default, Mar 13 2020, 10:14:16)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: hours = 'number of hours'
+
+In [2]: quit()
+kingston@DESKTOP-FI4P6OG:~$ whoami
+kingston
+kingston@DESKTOP-FI4P6OG:~$ whatisthetime
+whatisthetime: command not found
+kingston@DESKTOP-FI4P6OG:~$ end
+
+Command 'end' not found, did you mean:
+
+  command 'ent' from deb ent (1.2debian-2)
+  command 'env' from deb coreutils (8.30-3ubuntu2)
+  command 'snd' from deb snd-gtk-jack (20.1-1)
+  command 'snd' from deb snd-gtk-pulse (20.1-1)
+  command 'snd' from deb snd-nox (20.1-1)
+  command 'send' from deb mailutils-mh (1:3.7-2.1)
+  command 'send' from deb mmh (0.4-2)
+  command 'send' from deb nmh (1.7.1-6)
+  command 'ed' from deb ed (1.16-1)
+  command 'eid' from deb id-utils (4.6+git20120811-4ubuntu2)
+  command 'bnd' from deb bnd (3.5.0-4)
+  command 'nd' from deb nd (0.8.2-8build1)
+
+Try: sudo apt install <deb name>
+
+kingston@DESKTOP-FI4P6OG:~$ sudo search sudo
+sudo: search: command not found
+kingston@DESKTOP-FI4P6OG:~$ sudo apt search sudo
+Sorting... Done
+Full Text Search... Done
+calife/focal 1:3.0.1-5 amd64
+  Provides super user privileges to specific users
+
+ceph-deploy/focal 2.0.1-0ubuntu1 all
+  Ceph cluster deployment and configuration over ssh
+
+chiark-really/focal 6.1.2 amd64
+  really - a tool for gaining privilege (simple, realistic sudo)
+
+cpupower-gui/focal 0.7.2-2 amd64
+  GUI utility to change the CPU frequency
+
+cryptmount/focal 5.3.2-1 amd64
+  Management of encrypted file systems
+
+dwww/focal 1.13.5 amd64
+  Read all on-line documentation with a WWW browser
+
+eventstat/focal 0.04.09-1 amd64
+  kernel event states monitoring tool
+
+extrace/focal 0.7-1 amd64
+  trace exec() calls system-wide
+
+fltk1.1-games/focal 1.1.10-26ubuntu2 amd64
+  Fast Light Toolkit - example games: checkers, sudoku
+
+fltk1.3-games/focal 1.3.4-10build1 amd64
+  Fast Light Toolkit - example games: checkers, sudoku
+
+fusiondirectory-plugin-sudo/focal 1.3-2 all
+  sudo plugin for FusionDirectory
+
+fusiondirectory-plugin-sudo-schema/focal 1.3-2 all
+  LDAP schema for FusionDirectory sudo plugin
+
+gnome-sudoku/focal 1:3.36.0-1 amd64
+  Sudoku puzzle game for GNOME
+
+gosa-plugin-sudo/focal 2.7.4+reloaded3-11 all
+  sudo plugin for GOsa²
+
+gosa-plugin-sudo-schema/focal 2.7.4+reloaded3-11 all
+  LDAP schema for GOsa² sudo plugin
+
+gosu/focal-updates 1.10-1ubuntu0.20.04.1 amd64
+  Simple Go-based setuid+setgid+setgroups+exec
+
+hitori/focal 3.34.0-1 amd64
+  logic puzzle game similar to sudoku
+
+hobbit-plugins/focal 20191218 all
+  plugins for the Xymon network monitor
+
+hw-probe/focal 1.5-1 all
+  Tool to check operability of computer hardware
+
+hxtools/focal 20200126-1build1 amd64
+  Collection of tools and scripts
+
+idle3-tools/focal 0.9.1-2 amd64
+  change the idle3 timer of recent Western Digital Hard Disk Drives
+
+ksudoku/focal 4:19.12.3-0ubuntu1 amd64
+  Sudoku puzzle game and solver
+
+libdist-zilla-app-command-authordebs-perl/focal 0.003-1 all
+  List or install Dist::Zilla authors dependencies as Debian packages
+
+libpam-ssh-agent-auth/focal-updates 0.10.3-3ubuntu1.20.04.1 amd64
+  PAM Authentication via forwarded ssh-agent
+
+libpam-ufpidentity/focal 1.0-1 amd64
+  PAM library for UFP identity
+
+libqqwing-dev/focal 1.3.4-1.1build1 amd64
+  tool for generating and solving Sudoku puzzles (development)
+
+libqqwing2v5/focal 1.3.4-1.1build1 amd64
+  tool for generating and solving Sudoku puzzles (library)
+
+libsss-sudo/focal-updates 2.2.3-3ubuntu0.9 amd64
+  Communicator library for sudo
+
+lxqt-sudo/focal 0.14.1-0ubuntu1 amd64
+  Graphical Qt frontend for plain sudo
+
+lxqt-sudo-l10n/focal 0.14.1-0ubuntu1 all
+  Language package for lxqt-sudo
+
+man2html/focal 1.6g-12 amd64
+  browse man pages in your web browser
+
+musescore3-common/focal 3.2.3+dfsg1-4build1 all
+  MuseScore 3 (music composition and notation) shared files
+
+nudoku/focal 1.0.0-1 amd64
+  ncurses based sudoku games
+
+perlbrew/focal 0.88-1 all
+  script to manage perl installations in your $HOME
+
+pipx/focal 0.12.3.1-2ubuntu1 all
+  execute binaries from Python packages in isolated environments
+
+policykit-desktop-privileges/focal 0.21 all
+  run common desktop actions without password
+
+postgresql-12-pgextwlist/focal 1.10-1 amd64
+  PostgreSQL Extension Whitelisting
+
+qqwing/focal 1.3.4-1.1build1 amd64
+  tool for generating and solving Sudoku puzzles (application)
+
+qshutdown/focal 1.7.4-1build1 amd64
+  Qt program to shutdown/reboot/suspend/hibernate the system
+
+sbuild-debian-developer-setup/focal 0.79.0-1ubuntu1 all
+  Convenience script to set up an sbuild environment for Debian Developers
+
+sidedoor-sudo/focal 0.2.1-1 all
+  SSH connection daemon - sudoers entry
+
+sudo/focal-updates,focal-security 1.8.31-1ubuntu1.2 amd64 [upgradable from: 1.8.31-1ubuntu1]
+  Provide limited super user privileges to specific users
+
+sudo-ldap/focal-updates,focal-security 1.8.31-1ubuntu1.2 amd64
+  Provide limited super user privileges to specific users
+
+sudoku/focal 1.0.5-2build3 amd64
+  console based sudoku
+
+texlive-games/focal 2019.202000218-1 all
+  TeX Live: Games typesetting
+
+thefuck/focal 3.29-0.1 all
+  spelling corrector of console commands
+
+kingston@DESKTOP-FI4P6OG:~$
