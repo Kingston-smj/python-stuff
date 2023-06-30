@@ -13,8 +13,8 @@ for line in mail:
     if line.startswith("X-DSPAM-Confidence:"):
         # Extract the spam confidence value from the line
         spam_confidence = float(line.split(':')[1])
-        count += 1
-        total_spam_confidence += spam_confidence
+        count = count + 1
+        total_spam_confidence = total_spam_confidence + spam_confidence
 
 file.close()
 
